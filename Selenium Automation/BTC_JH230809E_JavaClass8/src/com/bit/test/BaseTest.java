@@ -15,6 +15,7 @@ public class BaseTest {
 	 * before and after annotation gets executed against each test thats why we will inherit this class 
 	 * in SmokeTest. as Junit annotation ONLy works if they are in the same class. 
 	 * 
+	 * Added new Code
 	 */
 	
 	ChromeDriver dr;
