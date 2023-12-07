@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import com.bit.pages.HomePage;
 import com.bit.pages.RegistryPage;
+import com.bit.stringNArray.Seleni7umPractice;
 
 public class SmokeTest extends BaseTest{
 	
@@ -24,7 +25,10 @@ public class SmokeTest extends BaseTest{
 	}
 	
 	@Test
-	public void targetFooterValidation() {
+	public void targetFooterValidation() throws InterruptedException {
+		
+		Seleni7umPractice s = new Seleni7umPractice();
+		s.test1(dr);
 		
 	}
 

@@ -24,7 +24,7 @@ public class BaseTest {
 		// WebDriver d = new ChromeDriver();
 		// WebDriver d1 = new FirefoxDriver();
 		// WebDriver d2 = new InternetExplorerDriver();
-
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Downloads\\chromedriver_win32_114\\chromedriver.exe");
 		dr = new ChromeDriver();
 		dr.manage().window().setSize(new Dimension(1600, 800));
 	}
