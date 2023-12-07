@@ -1,4 +1,6 @@
-package com.bit.stringPractice;
+package com.bit.stringNArray;
+
+import java.util.Scanner;
 
 import org.junit.Test;
 
@@ -109,26 +111,7 @@ public class StringBasic {
 	String num[] = {"12", "34", "22", "44", "45", "123"};
 	int zip[] = {12, 34, 222, 345, 345};
 	
-	@Test 
-	public void arrayTest() {
-		//array always has fixed size 
-		//each data is considered as an object 
-		int s[] = new int[3];
-		s[0] = 111;
-		s[1] = 1;
-		s[2] = 166;
-		//s[3] = 111; Array out of boundary exception
-		
-		//1st parameter is the number of parents and 2nd parameter is the number of child 
-		int x[][] = new int[3][2];
-		x[0][0] = 1;
-		x[0][1] = 11;
-		x[1][0] = 12;
-		x[1][1] = 13;
-		x[2][0] = 133;
-		x[2][1] = 14;
-		
-	}
+
 	
 	
 	
@@ -170,7 +153,7 @@ public class StringBasic {
 		
 		String s = "hi today is Saturday hi today is Saturday";
 		String d = s.replace(" ", "");
-		char[] r = d.toCharArray();
+		char []r = d.toCharArray();
 		char r1[] = s.replace(" ", "").toCharArray();
 		
 		for(int i=r1.length-1; i>=0; i--) {
@@ -179,9 +162,6 @@ public class StringBasic {
 		
 	}
 	
-	
-	
-	//........................TBC....................................
 	@Test
 	public void compareObjectByHashCodeValue() {
 		
@@ -253,7 +233,7 @@ public class StringBasic {
 
 		String stradd = str1 + str2;
 		
-		String s = "hi"; //immutable/notChangable
+		String s = "by"; //immutable/notChangable
 		s = "by";
 		System.out.println(s);
 		
@@ -270,6 +250,7 @@ public class StringBasic {
 		System.out.println("Value of sb in reverse order is : " + sb.reverse());
 		
 		StringBuffer b = new StringBuffer("hi today is Sunday");
+		//b.deleteCharAt(5);
 		System.out.println(b.deleteCharAt(3));
 		System.out.println(b.delete(3, 7));
 		//1st argument is the position/index
@@ -296,10 +277,23 @@ public class StringBasic {
 		System.out.println(Integer.valueOf(345345));
 	}
 	
+	@Test
+	public void matchClass() {
+		double a = (Math.random()*100);
+		System.out.println("abcd"+a+"@gmail.com");
+		double bv = Math.random();
+		System.out.println(bv);
+		
+		
+		//Scanner s = new Scanner();
+	}
+	
+	
+	
 	
 	@Test
 	public void findDuplicateCharFromAString() {
-		//
+		
 		String s = "Today is Sunday Today is Sunday";
 		char e[] = s.toCharArray();
 		
@@ -315,6 +309,8 @@ public class StringBasic {
 	}
 	
 	int duplicateValue;
+	
+	//........................TBC....................................
 	@Test
 	public void findHowManyTimesAValueIsDuplicate() {
 		
